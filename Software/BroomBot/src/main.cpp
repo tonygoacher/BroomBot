@@ -22,9 +22,9 @@ RemoteControl remote(SIGNAL_VT, remotePorts);
 
 InitBroomBot initBroomBotState(&stepper, LIMIT_SWITCH);
 Idle idleState(&remote);
-SmallRiseAndHover smallRiseAndHoverState(&remote, &stepper, 400 , 200);
-SmallRiseAndHover mediumRiseAndHoverState(&remote, &stepper, 1600 , 200);
-SmallRiseAndHover fullRise(&remote, &stepper, 2800 , 0);
+SmallRiseAndHover smallRiseAndHoverState(&remote, &stepper, 1600 , 200);
+SmallRiseAndHover mediumRiseAndHoverState(&remote, &stepper, 2600 , 200);
+SmallRiseAndHover fullRise(&remote, &stepper, 4500 , 0);
 
 FastReset fastReset(&stepper);
 

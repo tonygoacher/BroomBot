@@ -15,7 +15,7 @@ void SmallRiseAndHover::Entry()
 {
     state = InitialRise;
 	stepper->SetAcceleration(2000.0);
-    stepper->SetMaxSpeed(3000.0f);
+    stepper->SetMaxSpeed(4000.0f);
     Serial.println("SMallRiseAndHover::Entry");
     stepper->MoveTo(hoverHigh);
 

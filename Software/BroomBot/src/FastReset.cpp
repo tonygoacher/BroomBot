@@ -17,9 +17,9 @@ void FastReset::Entry()
     }
     else
     {
-        stepper->SetAcceleration(3000);
-        stepper->SetMaxSpeed(4000);
-        stepper->MoveTo(-600);
+        stepper->SetAcceleration(5000);
+        stepper->SetMaxSpeed(5000);
+        stepper->MoveTo(-10);
         state = DO_RESET;
     }
 }
